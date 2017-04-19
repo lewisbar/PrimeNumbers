@@ -10,9 +10,8 @@ import Foundation
 
 extension Int {
     var isAPrimeNumber: Bool {
-        guard self > 3 else {
-            return true
-        }
+        guard self > 1 else { return false }
+        guard self > 3 else { return true }
         
         for divisor in 2...(self/2) {
             if (self % divisor) == 0 {
