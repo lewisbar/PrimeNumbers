@@ -8,35 +8,38 @@
 
 import Foundation
 
-func isAPrimeNumber(_ number: Int) -> Bool {
-    guard number > 3 else {
+extension Int {
+    var isAPrimeNumber: Bool {
+        guard self > 3 else {
+            return true
+        }
+        
+        for divisor in 2...(self/2) {
+            if (self % divisor) == 0 {
+                return false
+            }
+        }
         return true
     }
     
-    for divisor in 2...(number/2) {
-        if (number % divisor) == 0 {
-            return false
+    static func primeNumbers(from firstNumber: Int = 1, through lastNumber: Int) -> [Int] {
+        var primeNumbers: [Int] = []
+        for number in firstNumber...lastNumber {
+            if number.isAPrimeNumber {
+                primeNumbers.append(number)
+            }
         }
+        return primeNumbers
     }
-    return true
 }
 
-func primeNumbers(from firstNumber: Int = 1, through lastNumber: Int) -> [Int] {
-    var primeNumbers: [Int] = []
-    for number in firstNumber...lastNumber {
-        if isAPrimeNumber(number) {
-            primeNumbers.append(number)
-        }
-    }
-    return primeNumbers
-}
 
 print("I will calculate all prime numbers from the first through the second number you enter.")
 print("Enter first number:")
 let firstNumber = Int(readLine()!)!
-print("Enter last number:")
+print("\nEnter last number:")
 let lastNumber = Int(readLine()!)!
-let primeNumbersResult = primeNumbers(from: firstNumber, through: lastNumber)
+let primeNumbersResult = Int.primeNumbers(from: firstNumber, through: lastNumber)
 print("\nThese are all prime numbers from \(firstNumber) through \(lastNumber):")
 for number in primeNumbersResult {
     print(number)
@@ -45,4 +48,3 @@ for number in primeNumbersResult {
 for _ in 1...2 {
     print("=============")
 }
-
