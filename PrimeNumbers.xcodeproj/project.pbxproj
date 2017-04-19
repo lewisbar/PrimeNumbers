@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B97495C51EA7A89500CDC2F8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97495C41EA7A89500CDC2F8 /* main.swift */; };
-		B97495CC1EA7AFC700CDC2F8 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97495CB1EA7AFC700CDC2F8 /* Int+Extension.swift */; };
+		B97495CC1EA7AFC700CDC2F8 /* Int+PrimeNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97495CB1EA7AFC700CDC2F8 /* Int+PrimeNumbers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		B97495C11EA7A89400CDC2F8 /* PrimeNumbers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PrimeNumbers; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97495C41EA7A89500CDC2F8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		B97495CB1EA7AFC700CDC2F8 /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		B97495CB1EA7AFC700CDC2F8 /* Int+PrimeNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+PrimeNumbers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				B97495C41EA7A89500CDC2F8 /* main.swift */,
-				B97495CB1EA7AFC700CDC2F8 /* Int+Extension.swift */,
+				B97495CB1EA7AFC700CDC2F8 /* Int+PrimeNumbers.swift */,
 			);
 			path = PrimeNumbers;
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B97495C51EA7A89500CDC2F8 /* main.swift in Sources */,
-				B97495CC1EA7AFC700CDC2F8 /* Int+Extension.swift in Sources */,
+				B97495CC1EA7AFC700CDC2F8 /* Int+PrimeNumbers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
