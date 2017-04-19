@@ -31,7 +31,7 @@ func primeNumbers(from firstNumber: Int = 1, through lastNumber: Int) -> [Int] {
     return primeNumbers
 }
 
-print("I will calculate all prime numbers from the first to the last of the two numbers you enter.")
+print("I will calculate all prime numbers from the first through the second number you enter.")
 print("Enter first number:")
 let firstNumber = Int(readLine()!)!
 print("Enter last number:")
