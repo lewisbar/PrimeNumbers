@@ -1,5 +1,5 @@
 //
-//  Int+Extension.swift
+//  Int+PrimeNumbers.swift
 //  PrimeNumbers
 //
 //  Created by Lennart Wisbar on 19.04.17.
