@@ -26,6 +26,7 @@ extension Int {
     }
     
     static func primeNumbers(from firstNumber: Int, through lastNumber: Int) -> [Int] {
+        guard lastNumber >= 2 else { return [] } // There are no prime numbers smaller than 2
         var primeNumbers: [Int] = []
         if firstNumber <= 2 { return Int.primeNumbers(through: lastNumber) } // Use optimized function
         for number in firstNumber...lastNumber {
@@ -37,6 +38,7 @@ extension Int {
     }
     
     static func primeNumbers(through lastNumber: Int) -> [Int] {
+        guard lastNumber >= 2 else { return [] } // There are no prime numbers smaller than 2
         var primeNumbers = [2]
         
         func isAPrimeNumber(_ number: Int) -> Bool {
