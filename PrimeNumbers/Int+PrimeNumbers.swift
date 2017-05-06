@@ -63,45 +63,4 @@ extension Int {
         }
         return primeNumbers
     }
-    
-//    static func primeNumbersWithOptimizedPerformance(lastNumber: Int) -> [Int] {
-//        var primeNumbers: [Int] = [2]
-//        
-//        for number in 3...lastNumber {
-//            if (number % divisor) == 0 {
-//                break
-//            }
-//        }
-//        
-//        return primeNumbers
-//    }
-
-//    static func primeNumbersOptimized(through lastNumber: Int) -> [Int] {
-//        var primeNumbers: [Int] = [2]
-//        var testNumber = 3
-//        var couldBePrime = true
-//        var index = 0
-//        
-//        while testNumber <= lastNumber {
-//            while couldBePrime == true {
-//                if testNumber % primeNumbers[index] == 0 {
-//                    couldBePrime = false
-//                    testNumber += 2
-//                    index = 0
-//                } else {
-//                    if primeNumbers[index] >= testNumber / (testNumber+2){ //primeNumbers[index+1]{
-//                        //primeNumbers.append(testNumber)
-//                        print(testNumber)
-//                        testNumber += 2
-//                        index = 0
-//                    } else {
-//                        index += 1
-//                    }
-//                    couldBePrime = true
-//                }
-//            }
-//        }
-//        return primeNumbers
-//    }
-
 }
